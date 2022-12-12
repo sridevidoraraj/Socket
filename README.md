@@ -6,9 +6,6 @@
 This project structured using intellij platform and maven as build system.
 
 ##### About Project
-
--> This project is used for communicating multiple clients simultaneously with single server.  
-
 -> In this project, two class file are used. One for server main application program,another created using thread to communicate multiple clients.
 
 -> In serverThread program, the class file extends thread in which run() method is used to get the input from multiple clients and display message in server as (From Client-" +clientNo+ ": Message is :"+clientMessage)
@@ -35,27 +32,7 @@ This project structured using intellij platform and maven as build system.
 8. From Client-1: Message is :bye
 9. Client -1 exit!! 
 
-### Reference Link
-
-[Link](http://net-informations.com/java/net/multithreaded.htm)
-
-
-### To Run The Program
-
-for maven, to build the project use 
-```
-mvn clean install
-```
-
-to run the program, in main application by clicking the run button icon where the java class file is created.
-
-```bash
-Public class Server{
-```
-
-
-
-
+##### Run The Program
 
 
 

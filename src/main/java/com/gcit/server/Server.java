@@ -3,13 +3,17 @@ package com.gcit.server;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+import java.util.Properties;
 public class Server {
     public static void main(String[] args) throws IOException {
 
-
         try {
-            ServerSocket server = new ServerSocket(8080);
+
+            Properties properties = new Properties();
+            FileReader fr = new FileReader("src/main/resources/application.properties");
+            properties.load(fr);
+            int number = Integer.parseInt(properties.getProperty("server.port"));
+            ServerSocket server = new ServerSocket(number);
             int counter = 0;
             System.out.println("Server Started ....");
             while (true) {
